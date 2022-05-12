@@ -17,15 +17,9 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
-Route::get('/admin/manager', function () {
-    return view('/admin/manager');
-});
-Route::get('/admin/tab/header', function () {
-    return view('admin/tab/header');
-});
-Route::get('/admin/tab/navbar', function () {
-    return view('admin/tab/navbar');
-});
-Route::get('/admin/tab/footer', function () {
-    return view('admin/tab/footer');
-});
+Route::get('/admin/login', 'AdminController@loginManager');
+Route::get('/admin/manager', 'AdminController@manager');
+Route::get('/admin/tab/header', 'AdminController@header');
+Route::get('/admin/tab/navbar', 'AdminController@navbar');
+Route::get('/admin/tab/footer', 'AdminController@footer');
+Route::get('/admin/tab/body', 'AdminController@body');
