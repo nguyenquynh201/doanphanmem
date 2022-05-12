@@ -12,79 +12,35 @@
 
     <title>SB Admin 2 - Dashboard</title>
 
-    <!-- Custom fonts for this template-->
-    <link
-      href="../admin/vendor/fontawesome-free/css/all.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-      rel="stylesheet"
-    />
+     <!-- Custom fonts for this template-->
+     <link
+     href="../admin/vendor/fontawesome-free/css/all.min.css"
+     rel="stylesheet"
+     type="text/css"
+   />
+   <link
+     href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+     rel="stylesheet"
+   />
 
-    <!-- Custom styles for this template-->
-    <link href="../admin/css/sb-admin-2.css" rel="stylesheet" />
-
+   <!-- Custom styles for this template-->
+   <link href="../admin/css/sb-admin-2.css" rel="stylesheet" />
   </head>
 
   <body id="page-top">
     <!-- Page Wrapper -->
     <div id="wrapper">
-      <!-- Sidebar -->
-      @include('admin.tab.navbar')
-      <!-- End of Sidebar -->
+     @include('admin.tab.navbar')
 
       <!-- Content Wrapper -->
       <div id="content-wrapper" class="d-flex flex-column">
-        <!-- Main Content -->
         <div id="content">
-          <!-- Topbar -->
-          <nav
-            class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"
-          >
-            <!-- Sidebar Toggle (Topbar) -->
-            <button
-              id="sidebarToggleTop"
-              class="btn btn-link d-md-none rounded-circle mr-3"
-            >
-              <i class="fa fa-bars"></i>
-            </button>
-
-            <!-- Topbar Search -->
-            <form
-              class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
-            >
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control bg-light border-0 small"
-                  placeholder="Search for..."
-                  aria-label="Search"
-                  aria-describedby="basic-addon2"
-                />
-                <div class="input-group-append">
-                  <button class="btn btn-primary" type="button">
-                    <i class="fas fa-search fa-sm"></i>
-                  </button>
-                </div>
-              </div>
-            </form>
-
-            <!-- Topbar Navbar -->
-            @include('admin.tab.header')
-          </nav>
-          <!-- End of Topbar -->
-
-          <!-- Begin Page Content -->
-        @include('admin.tab.body')
-          <!-- /.container-fluid -->
+          @include('admin.tab.header') 
+          @yield('content')
         </div>
         <!-- End of Main Content -->
 
-        <!-- Footer -->
        @include('admin.tab.footer')
-        <!-- End of Footer -->
       </div>
       <!-- End of Content Wrapper -->
     </div>
@@ -134,21 +90,21 @@
       </div>
     </div>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="../admin/vendor/jquery/jquery.min.js"></script>
-    <script src="../admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Bootstrap core JavaScript-->
+      <script src="../admin/vendor/jquery/jquery.min.js"></script>
+      <script src="../admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="../admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+      <!-- Core plugin JavaScript-->
+      <script src="../admin/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="../admin/js/sb-admin-2.min.js"></script>
+      <!-- Custom scripts for all pages-->
+      <script src="../admin/js/sb-admin-2.min.js"></script>
 
-    <!-- Page level plugins -->
-    <script src="../admin/vendor/chart.js/Chart.min.js"></script>
+      <!-- Page level plugins -->
+      <script src="../admin/vendor/chart.js/Chart.min.js"></script>
 
-    <!-- Page level custom scripts -->
-    <script src="../admin/js/demo/chart-area-demo.js"></script>
-    <script src="../admin/js/demo/chart-pie-demo.js"></script>
+      <!-- Page level custom scripts -->
+      <script src="../admin/js/demo/chart-area-demo.js"></script>
+      <script src="../admin/js/demo/chart-pie-demo.js"></script>
   </body>
 </html>

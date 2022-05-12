@@ -1,6 +1,4 @@
-<head>
-    <link href="../css/sb-admin-2.css" rel="stylesheet" />
-</head>
+
 <ul
         class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
         id="accordionSidebar"
@@ -21,7 +19,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="{{URL::to('/admin/dashboard')}}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Trang chủ</span></a
           >
@@ -37,7 +35,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            href="#"
+            href="{{URL::to('/admin/message')}}"
 
           >
           <i class='fab fa-discourse'></i>
@@ -59,7 +57,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            href="#"
+            href="{{URL::to('/admin/recruit')}}"
           >
             <i class="fas fa-fw fa-folder"></i>
             <span>Quản lý tuyển dụng</span>
@@ -68,7 +66,7 @@
 
         <!-- Nav Item - Charts -->
         <li class="nav-item">
-          <a class="nav-link" href="charts.html">
+          <a class="nav-link" href="{{URL::to('/admin/recruiter')}}">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Quản lý người tuyển dụng</span></a
           >

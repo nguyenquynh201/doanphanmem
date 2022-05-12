@@ -17,9 +17,14 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
-Route::get('/admin/login', 'AdminController@loginManager');
-Route::get('/admin/manager', 'AdminController@manager');
-Route::get('/admin/tab/header', 'AdminController@header');
-Route::get('/admin/tab/navbar', 'AdminController@navbar');
-Route::get('/admin/tab/footer', 'AdminController@footer');
-Route::get('/admin/tab/body', 'AdminController@body');
+Route::get('/login', 'AdminController@loginManager');
+Route::get('/admin/dashboard', 'AdminController@manager');
+Route::get('/body', 'AdminController@body');
+
+// Message
+Route::get('/admin/message', 'MessageController@message');
+
+/// manager recruiter
+Route::get('/admin/recruiter', 'RecruiterController@recruiter');
+/// manager recruit
+Route::get('/admin/recruit', 'RecruitController@recruit');
